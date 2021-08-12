@@ -1,0 +1,31 @@
+.header {
+    &__video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    &__footer {
+        text-align: center;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: $bg-black-alpha;
+        padding: .2rem 0;
+    }
+
+    &__content {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}

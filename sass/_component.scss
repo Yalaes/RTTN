@@ -1,0 +1,36 @@
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $bg-black-alpha;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: .4rem $padding-content-lr;
+    }
+
+    &__logo {
+        font-family: $font-logo;
+        font-size: 1.2rem;
+        display: flex;
+        align-items: center;
+        line-height: 1;
+        gap: .3rem;
+
+        img {
+            height: 1em;
+            width: auto;
+        }
+    }
+}
+
+#title {
+    font-size: 4rem;
+    font-weight: $font-black;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    line-height: 1;
+    text-shadow: $text-shadow;
+}
