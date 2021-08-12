@@ -4,6 +4,12 @@
     align-items: center;
     background-color: $bg-black-alpha;
 
+    &__menu {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 1rem;
+    }
     &__content {
         display: flex;
         justify-content: space-between;
@@ -26,11 +32,30 @@
     }
 }
 
-#title {
-    font-size: 4rem;
-    font-weight: $font-black;
+.cta {
+    text-decoration: none;
+    color: currentColor;
     text-transform: uppercase;
-    letter-spacing: .05em;
-    line-height: 1;
-    text-shadow: $text-shadow;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    padding: .3em 1.5em;
+    background-color: orangered;
+   
+    transition: all .25s ease-in-out;
+    border-radius: 1.5rem;
+
+    &:hover, &:focus {
+        transform: scale(1.05);
+    }
+
+    &--2 {
+        background-color: transparent;
+        border: 3px solid orangered;
+
+        &:hover, &:focus {
+            background-color: orangered;
+        }
+    }
 }

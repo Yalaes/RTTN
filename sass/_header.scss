@@ -1,4 +1,5 @@
 .header {
+    height: 100vh;
     &__video {
         position: absolute;
         top: 0;
@@ -16,7 +17,22 @@
         bottom: 0;
         width: 100%;
         background-color: $bg-black-alpha;
-        padding: .2rem 0;
+        padding: .5rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+
+        img {
+            max-height: 2rem;
+            width: auto;
+            display: block;
+            transition: all .25s ease-in-out;
+
+            &:hover, &:focus {
+                transform: scale(1.05);
+            }
+        }
     }
 
     &__content {
@@ -27,5 +43,13 @@
         width: 100%;
         transform: translate(-50%, -50%);
         text-align: center;
+    }
+
+    .ctas {
+        margin-top: 1.5rem;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
     }
 }
