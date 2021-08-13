@@ -22,7 +22,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #333;
-  line-height: 1.65;
+  line-height: 1.8;
   color: #EFEFEF;
   font-family: "Montserrat", sans-serif;
 }
@@ -50,7 +50,7 @@ body {
 
 #subtitle {
   font-size: 1.2rem;
-  margin: .5rem 0;
+  margin: 0;
 }
 
 .nav {
@@ -115,6 +115,29 @@ body {
   background-color: orangered;
 }
 
+.viewmore {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 3rem;
+  height: 3rem;
+  padding: .5rem;
+  border-radius: 100%;
+  margin: 2rem auto;
+  text-align: center;
+  background-color: #509BB7;
+  transition: all .25s ease-in-out;
+}
+
+.viewmore:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.viewmore:active {
+  transform: scale(0.95);
+}
+
 .header {
   height: 100vh;
 }
@@ -165,7 +188,7 @@ body {
 }
 
 .header .ctas {
-  margin-top: 1.5rem;
+  margin-top: 2.5rem;
   display: flex;
   justify-content: center;
   gap: 1rem;
@@ -191,5 +214,21 @@ body {
   height: 1px;
   width: 2em;
   background-color: white;
+}
+
+.features-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 5rem;
+  row-gap: 1rem;
+}
+
+.features-part {
+  flex: 1 1 50ch;
+}
+
+.features-part ul {
+  margin: 0;
+  padding: 1em;
 }
 /*# sourceMappingURL=main.css.map */

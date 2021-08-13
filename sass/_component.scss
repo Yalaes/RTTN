@@ -59,3 +59,28 @@
         }
     }
 }
+
+
+.viewmore {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 3rem;
+    height: 3rem;
+    padding: .5rem;
+    border-radius: 100%;
+    margin: 2rem auto;
+    text-align: center;
+    background-color: #509BB7;
+    transition: all .25s ease-in-out;
+
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+    }
+
+    &:active {
+        transform: scale(.95);
+    }
+
+}
