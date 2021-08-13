@@ -1,7 +1,5 @@
 .nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-c-c;
     background-color: $bg-black-alpha;
 
     &__menu {
@@ -62,9 +60,7 @@
 
 
 .viewmore {
-    display: flex;
-    justify-content: center;
-    align-content: center;
+    @include flex-c-c;
     width: 3rem;
     height: 3rem;
     padding: .5rem;

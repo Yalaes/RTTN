@@ -21,9 +21,7 @@
         width: 100%;
         background-color: $bg-black-alpha;
         padding: .5rem 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-c-c;
         gap: 1rem;
 
         img {
@@ -50,8 +48,7 @@
 
     .ctas {
         margin-top: 2.5rem;
-        display: flex;
-        justify-content: center;
+        @include flex-c-c;
         gap: 1rem;
         flex-wrap: wrap;
     }

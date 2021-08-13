@@ -118,7 +118,7 @@ body {
 .viewmore {
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
   width: 3rem;
   height: 3rem;
   padding: .5rem;
@@ -184,12 +184,17 @@ body {
   margin-top: 2.5rem;
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 1rem;
   flex-wrap: wrap;
 }
 
 .section {
   background-color: #36312B;
+}
+
+.section--faq {
+  background-color: #565252;
 }
 
 .section h3 {
@@ -223,5 +228,51 @@ body {
 .features-part ul {
   margin: 0;
   padding: 1em;
+}
+
+.features-more {
+  padding-top: 2rem;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 1s ease-out, opacity 1s ease .25s;
+}
+
+.show {
+  max-height: 1000px;
+  opacity: 1;
+}
+
+.faq-wrap {
+  margin-bottom: 10rem;
+}
+
+.faq-wrap .bar {
+  width: 100%;
+  padding: 1rem;
+  background: #272525;
+  cursor: pointer;
+  color: currentColor;
+  font-weight: bold;
+  border-bottom: 1px solid white;
+}
+
+.faq-wrap .answer {
+  padding-left: 1%;
+  background: #565252;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 1s ease, opacity 1s ease;
+}
+
+.faq-wrap .answer p {
+  max-width: 95%;
+}
+
+.faq-wrap .answer.visible {
+  max-height: 1000px;
+  opacity: 1;
+  transition: max-height 2s ease, opacity 2s ease;
 }
 /*# sourceMappingURL=main.css.map */

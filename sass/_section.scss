@@ -1,11 +1,16 @@
 .section {
     background-color: $bg-clr-1;
     
+    &--faq {
+        background-color: $bg-clr-2;
+    }
+
     h3 {
         position: relative;
         text-transform: uppercase;
         font-size: 1.5rem;
         margin-bottom: 3em;
+        
         &::after {
             content: "";
             position: absolute;

@@ -1,0 +1,33 @@
+.faq-wrap {
+    margin-bottom: 10rem;
+    .bar {
+        width:100%;
+        padding: 1rem;
+        background: #272525;
+        cursor: pointer;
+        color: currentColor;
+        font-weight:bold;
+        border-bottom: 1px solid white;
+      }
+
+      .answer {
+          padding-left: 1%;
+        background: $bg-clr-2;
+        max-height:0;
+        overflow:hidden;
+        opacity: 0;
+        transition: max-height 1s ease, opacity 1s ease;
+
+        p {
+            max-width: 95%;
+        }
+
+        &.visible {
+            max-height:1000px;   
+            opacity: 1;
+            transition: max-height 2s ease, opacity 2s ease;
+                   
+        }
+      }
+
+}

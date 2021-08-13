@@ -1,6 +1,5 @@
 .features-wrap {
-   display: flex;
-   
+   display: flex;  
    flex-wrap: wrap;
    column-gap: 5rem;
    row-gap: 1rem;
@@ -12,5 +11,18 @@
         margin: 0;
         padding: 1em;
     }
+}
+
+.features-more {
+    padding-top: 2rem;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 1s ease-out, opacity 1s ease .25s;
+}
+
+.show {
+    max-height:1000px;
+  opacity: 1;
 }
 
