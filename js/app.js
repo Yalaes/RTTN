@@ -1,4 +1,4 @@
-// toogle expand more features list 
+// toogle expand more features
 const viewMoreFeatures = document.querySelector("#view_more_features");
 const moreFeatures = document.querySelector("#more-features");
 
@@ -8,7 +8,7 @@ function expand () {
     moreFeatures.classList.toggle("show");
 }
 
-//fap accordeon
+//faQ accordeon
 
 const bars = document.querySelectorAll(".bar");
 

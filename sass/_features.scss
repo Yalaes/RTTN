@@ -18,11 +18,11 @@
     max-height: 0;
     overflow: hidden;
     opacity: 0;
-    transition: max-height 1s ease-out, opacity 1s ease .25s;
+    transition: max-height 1.5s ease, opacity 1s ease .25s;
 }
 
 .show {
-    max-height:1000px;
+    max-height: 10000px;
   opacity: 1;
 }
 

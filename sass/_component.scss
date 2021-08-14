@@ -2,12 +2,33 @@
     @include flex-c-c;
     background-color: $bg-black-alpha;
 
+
+
     &__menu {
         display: flex;
         justify-content: flex-end;
         align-items: center;
         gap: 1rem;
+
+
+        @include mobil-l {
+            display: none;
+        }
+
+        &--burger {
+            display: none;
+            font-size: 1.5rem;
+            font-weight: bold;
+
+
+            @include mobil-l {
+                display: block;
+            }
+        }
     }
+
+
+
     &__content {
         display: flex;
         justify-content: space-between;
@@ -40,11 +61,12 @@
     font-size: 1rem;
     padding: .3em 1.5em;
     background-color: orangered;
-   
+
     transition: all .25s ease-in-out;
     border-radius: 1.5rem;
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
         transform: scale(1.05);
     }
 
@@ -52,7 +74,8 @@
         background-color: transparent;
         border: 3px solid orangered;
 
-        &:hover, &:focus {
+        &:hover,
+        &:focus {
             background-color: orangered;
         }
     }
@@ -69,6 +92,10 @@
     text-align: center;
     background-color: #509BB7;
     transition: all .25s ease-in-out;
+
+    img {
+        height: 80%;
+    }
 
     &:hover {
         cursor: pointer;

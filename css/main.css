@@ -35,8 +35,8 @@ body {
 }
 
 .section-padding {
-  padding-top: 6rem;
-  padding-bottom: 1rem;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
 }
 
 #title {
@@ -65,6 +65,24 @@ body {
   justify-content: flex-end;
   align-items: center;
   gap: 1rem;
+}
+
+@media only screen and (max-width: 40.6em) {
+  .nav__menu {
+    display: none;
+  }
+}
+
+.nav__menu--burger {
+  display: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 40.6em) {
+  .nav__menu--burger {
+    display: block;
+  }
 }
 
 .nav__content {
@@ -129,6 +147,10 @@ body {
   transition: all .25s ease-in-out;
 }
 
+.viewmore img {
+  height: 80%;
+}
+
 .viewmore:hover {
   cursor: pointer;
   transform: scale(1.05);
@@ -139,7 +161,7 @@ body {
 }
 
 .header {
-  height: 100vh;
+  height: 45rem;
   background-image: url("../images/hero.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -235,11 +257,11 @@ body {
   max-height: 0;
   overflow: hidden;
   opacity: 0;
-  transition: max-height 1s ease-out, opacity 1s ease .25s;
+  transition: max-height 1.5s ease, opacity 1s ease .25s;
 }
 
 .show {
-  max-height: 1000px;
+  max-height: 10000px;
   opacity: 1;
 }
 

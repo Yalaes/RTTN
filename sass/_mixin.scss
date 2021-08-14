@@ -3,3 +3,11 @@
     justify-content: center;
     align-items: center;
 }
+
+// media queries 
+//650px is 40.6em
+@mixin mobil-l {
+    @media only screen and (max-width:40.6em){
+        @content;
+    }
+}
