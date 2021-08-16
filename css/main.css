@@ -54,10 +54,21 @@ body {
 }
 
 .nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.5);
+  transition: background-color 1s ease;
+}
+
+.nav.opaque {
+  background-color: #151515;
+  border-bottom: 1px solid #646464;
 }
 
 .nav__menu {
@@ -160,8 +171,20 @@ body {
   transform: scale(0.95);
 }
 
+.fancy-link {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  background-position: bottom left;
+  transition: background-size .25s ease-in-out;
+}
+
+.fancy-link:hover, .fancy-link:focus {
+  background-size: 100% 2px;
+}
+
 .header {
-  height: 45rem;
+  min-height: 100vh;
   background-image: url("../images/hero.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -169,16 +192,23 @@ body {
 
 .header__footer {
   text-align: center;
-  position: absolute;
+  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
+  z-index: 10;
   background-color: rgba(0, 0, 0, 0.5);
+  transition: background-color 1s ease;
   padding: .5rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1rem;
+}
+
+.header__footer.opaque {
+  background-color: #151515;
+  border-top: 1px solid #646464;
 }
 
 .header__footer img {
